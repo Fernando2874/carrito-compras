@@ -29,4 +29,8 @@ function calculartotal(){
 
 function mostrarenCarro(){
     listaCarro.textContent = "";
+    var nodoProductoenCarrito = document.createElement("li");
+    nodoProductoenCarrito.classList.add("list-group-item","text-right","mx-2");
+    nodoProductoenCarrito.textContent = objP.nombre + "- $" + objP.precio;
+    listaCarro.appendChild(nodoProductoenCarrito);
 }
